@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Test1, Test2, MyApp } from './Components/Task1';
+import { Profile } from './Components/Задание1';
+import { Ifrender } from './Components/Task3';
+import{ShoppingList} from './Components/Task4'
 
-function App() {
+function App()
+ {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {/* <Test1></Test1>
+     <Test2></Test2> */}
+     {/* {<MyApp></MyApp> } */}
+     <Profile></Profile>
+     
+     {/* Условный рендеринг */}
+     {/* <Ifrender></Ifrender> */}
+     {/* <ShoppingList></ShoppingList> */}
+
+
     </div>
   );
 }
 
 export default App;
+
+
