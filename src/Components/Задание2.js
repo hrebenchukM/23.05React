@@ -42,19 +42,13 @@ const stylesObj = [
   { border: '2px solid #ff0', borderRadius: '20px', padding: '30px', maxWidth: '500px', margin: '10px auto', backgroundColor: '#ffffe0', fontFamily: 'Courier New, monospace' },
 ];
 
-// let currentIndex = 0;
 
-// const randStyle = () => {
-//   const style = stylesObj[currentIndex];
-//   currentIndex = (currentIndex + 1);
-//   return style;
-// };
 
 const randStyle = () => {
   const min = 0;
-  const max = stylesObj.length;
-  const randomIndex = Math.floor(min + Math.random() * (max - min));
-  return stylesObj[randomIndex];
+  const max = stylesObj.length;//5
+  const randI = Math.floor(min + Math.random() * (max - min));//(0+0.999*(5-0))=(0+4.995)=4.995=Math.floor(4.995)=4
+  return stylesObj[randI];
 };
 
 
